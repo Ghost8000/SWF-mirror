@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-<html> 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="generator" content="RocketCake">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="index_html.css?h=580ff948">
-</head>
-<body><div style="position: relative; width: 640px;">
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" id=0 align="middle" width=640 height=362>
-<param name="movie" value="EZPZ Lemon Sqeezy (1).swf" />
-<param name="menu" value="false" />
-<param name="quality" value="high" />
-<param name="bgcolor" value="#FFFFFF" />
-<param name="wmode" value="transparent" />
-<embed wmode="transparent" src="EZPZ Lemon Sqeezy (1).swf" menu="false" quality="high" bgcolor="#FFFFFF" width=640 height=362 name="player" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-</object>
-<div id="_91ef1183e3ba4a4fad744f4cbd066bda" style="color:blue;text-align:center;">Download Youtube video with&nbsp;</div>
-<script type="text/javascript">(function () {var h = function() { var el = document.getElementById('_91ef1183e3ba4a4fad744f4cbd066bda');var t = document.createElement('a');t.setAttribute('href', 'https://www.freemake.com/free_video_downloader/');var f = false;if (f) t.setAttribute('rel', 'nofollow');t.innerHTML = 'video downloader';t.style.cssText = "font-family: 'Arial'; font-size: 12px; color:blue; top: 6px; left: 6px;border-style: none; line-height:8px";el.appendChild(t);};var ds = document.readyState;if(ds == 'interactive' || ds == 'complete') { h(); }else document.onreadystatechange = function () {if (document.readyState == 'interactive') h();}}());</script></div></body>
-</body>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset='utf8'>
+    </head>
+    <body>
+        <div id='ruffle'></div>
+        <script src='https://e9x.github.io/ruffle-example/ruffle.js'></script>
+        <script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://github.com/Ghost8000/SWF-mirror/blob/main/EZPZ%20Lemon%20Sqeezy.swf', 'ruffle', 500, 500);
+        </script>
+    </body>
 </html>
